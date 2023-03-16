@@ -1,10 +1,10 @@
-.container {
+.main-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
-    background-color: bisque;
+    background-color: rgb(106, 0, 155);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -14,14 +14,25 @@
 .item {
     border: 2px;
     border-radius: 10px;
-    background-color: rgb(17, 252, 236);
+    background-color: rgb(26, 255, 18);
     width: 200px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 p {
