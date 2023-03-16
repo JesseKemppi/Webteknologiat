@@ -1,82 +1,90 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Kurssi sivut</title>
+    <title>Lomake-esimerkki</title>
 </head>
 
 <body>
+    <form>
+        <fieldset>
+            <legend>Contact information</legend>
+            <table>
 
-    <h1><b>Käymäni kurssit</b></h1>
 
-
-    <table>
-        <tr>
-            <th>Kurssin nimi</th>
-            <th>Opintopisteet</th>
-            <td>Lyhyt info</td>
-
-        </tr>
-        <tr>
-            <td>Ohjelmoinnin perusteet</td>
-            <td>5 op</td>
-            <td> Kursilla opiskeltiin ohjelmoinnin perusteita C# kielellä</td>
-
-        </tr>
-        <tr>
-            <td>Taloushallinto</td>
-            <td>5 op</td>
-            <td>Kurssilla opeteltiin yrityksen tiliristikoiden tekemistä ja yleistä taloushallintoa</td>
+                <tr>
+                    <td> <label>Firstname</label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td colspan="2">Preferred contact method:</label>
 
 
 
-        </tr>
-        <tr>
-            <td>Asiakkuudet ja markkinointi</td>
-            <td>4 op</td>
-            <td>Kurssilla käytiin läpi kuinka yritykset toteuttavat markkinointia ja ylläpitävät asiakassuhteita</td>
+                </tr>
+                <tr>
+                    <td> <label>Lastname:</label></td>
+                    <td> <input type="text" id="sname" name="sname"></td>
+                    <td><input type="checkbox" id="method1" name="method1" value="Email">
+                        <labelfor="method1">Email:</label>
+                    </td>
 
-        </tr>
-        <tr>
-            <td>Asiantuntijan viestintätaidot</td>
-            <td>4 op</td>
-            <td>Kurssilla opiskeltiin yritysviestintää ja asiakirjastandardia</td>
-
-        </tr>
-
-
-
-
-    </table>
-
-    <br />
-
-    <h4>Vähemmän tärkeät kurssit:</h4> <br />
-    <ul>
-        <li>Orientation to sustainability thinking 1 op</li>
-        <li>Liiketalouden matematiikan perusteet 3 op</li>
-        <li>Ammatillinen kasvu 1 1 op</li>
-    </ul>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="text" id="email" email="email"></td>
+                    <td><input type="checkbox" id="vehicle2" name="method2" value="Phone"><label for="method2">Phone:
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Telephone</label></td>
+                    <td><input type="text" id="phone" email="phone"></td>
+                </tr>
+            </table>
+        </fieldset>
 
 
 
-    <br />
+        <fieldset>
+            <legend>Feedback</legend>
+            <table>
+                <tr>
+                    <td><label>Message subject:</label></td>
+                    <td><input type="text" id="fmessage" message="fmessage"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td> <textarea name="message" rows="15" cols="50"></textarea></td>
+                </tr>
+            </table>
+
+
+
+            <tr>
+                <td><label>Attach file</label></td>
+                <td><input type="file"></td>
+            </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="submit" value="send"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+
+    </form>
+
+
+</body>
 
 
 
 
-    <br /><img src="https://www.etasku.fi/wp-content/uploads/2016/06/sahkoinen-taloushallinto.jpg" alt="esimerkkikuva"
-        width="150" height="150"><br />
 
 
 
 
 
 
-
-
-    <p>Linkki koulun sivulle</p><br />
-
-    <a href=https://elab.lab.fi/fi>LAB.FI</a>
 
 </html>
