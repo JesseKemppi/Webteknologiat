@@ -6,75 +6,81 @@
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <div class="item">
-                <legend>Contact information</legend>
+    <div class="main-container">
+
+        <form>
+            <fieldset>
+
+                <div class="item">
+                    <p>
+                        <legend>Contact information</legend>
 
 
 
 
-                <label>Firstname</label>
-                <input type="text" id="fname" name="fname">
-                Preferred contact method:</label>
+                        <label>Firstname</label>
+                        <input type="text" id="fname" name="fname">
+                        <label>Lastname:</label>
+                        <input type="text" id="sname" name="sname">
+                    </p>
 
-            </div>
-
-
-
-            <label>Lastname:</label>
-            <input type="text" id="sname" name="sname">
-            <input type="checkbox" id="method1" name="method1" value="Email">
-            <labelfor="method1">Email:</label>
+                </div>
 
 
-
-
-                <label>Email</label>
-                <td><input type="text" id="email" email="email"></td>
-                <td><input type="checkbox" id="vehicle2" name="method2" value="Phone"><label for="method2">Phone:
-                </td>
-
-
-                <label>Telephone</label></td>
-                <input type="text" id="phone" email="phone">
-
-
-        </fieldset>
+                <div class="item">
+                    Preferred contact method:</label>
+                    <input type="checkbox" id="method1" name="method1" value="Email">
+                    <labelfor="method1">Email:</label>
 
 
 
-        <fieldset>
-            <legend>Feedback</legend>
-            <table>
+                        <div class="item">
+                            <label>Email</label>
+                            <input type="text" id="email" email="email">
+                            <input type="checkbox" id="vehicle2" name="method2" value="Phone"><label
+                                for="method2">Phone:
+
+
+
+                                <label>Telephone</label>
+                                <input type="text" id="phone" email="phone">
+                        </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <table>
+                    <tr>
+                        <td><label>Message subject:</label></td>
+                        <td><input type="text" id="fmessage" message="fmessage"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td> <textarea name="message" rows="15" cols="50"></textarea></td>
+                    </tr>
+                </table>
+
+
+
                 <tr>
-                    <td><label>Message subject:</label></td>
-                    <td><input type="text" id="fmessage" message="fmessage"></td>
+                    <td><label>Attach file</label></td>
+                    <td><input type="file"></td>
                 </tr>
-            </table>
-            <table>
-                <tr>
-                    <td> <textarea name="message" rows="15" cols="50"></textarea></td>
-                </tr>
-            </table>
+                </table>
+                <table>
+                    <tr>
+                        <td><input type="submit" value="send"></td>
+                    </tr>
+                </table>
+            </fieldset>
 
 
 
-            <tr>
-                <td><label>Attach file</label></td>
-                <td><input type="file"></td>
-            </tr>
-            </table>
-            <table>
-                <tr>
-                    <td><input type="submit" value="send"></td>
-                </tr>
-            </table>
-        </fieldset>
-
-
-
-    </form>
+        </form>
 
 
 </body>
